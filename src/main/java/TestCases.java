@@ -42,14 +42,14 @@ class TestCases {
     void compareTwoImages() {
         BufferedImage image1;
         BufferedImage image2;
-        File imageFile1 = new File("src/main/resources/img/config.png");
-        File imageFile2 = new File("src/main/resources/img/config2.png");
+        File imageFile1 = new File("src/main/resources/img/switch-activated.png");
+        File imageFile2 = new File("src/main/resources/img/switch-moved.png");
 
         try {
             image1 = ImageIO.read(imageFile1);
             image2 = ImageIO.read(imageFile2);
 
-            System.out.println(CompareImagesUtils.compareImages(image1, image2, 100));
+            System.out.println(CompareImagesUtils.compareImages(image1, image2, 98));
         } catch (IOException e) {
             e.printStackTrace();
         }
